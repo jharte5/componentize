@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ToDOM</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    </head>
+    <body>
+        <div class="app">
+            <h1>Todo</h1>
+                <section>
+                    <label for="todo-input">Add to your todo list!</label>
+                    <input class="todo-input "type="text" name="todo-input">
+                    <button class="add-todo">ADD</button>
+                </section>
+                <section>
+                    <label for="index-input">Remove an index from your todo list! (Counting from zero because coding.)</label>
+                    <input class="index-input "type="text" name="index-input">
+                    <button class="remove-todo">REMOVE</button>
+                </section>
+            <ul class="todo-list"></ul>
+        </div>
+        <script src = "./start.js"></script>
+        <script src = "./complete.js"></script>
+    </body>
+</html>

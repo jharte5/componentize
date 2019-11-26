@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="style.css" type="text/css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
         <div class="app">
@@ -15,15 +15,22 @@
                 <section>
                     <label for="todo-input">Add to your todo list!</label>
                     <input class="todo-input "type="text" name="todo-input">
-                    <button class="add-todo">ADD</button>
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                    <!-- <button class="add-todo">ADD</button> -->
                 </section>
                 <section>
                     <label for="index-input">Remove an index from your todo list! (Counting from zero because coding.)</label>
                     <input class="index-input "type="text" name="index-input">
-                    <button class="remove-todo">REMOVE</button>
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                    <!-- <button class="remove-todo">REMOVE</button> -->
                 </section>
             <ul class="todo-list"></ul>
         </div>
+        <script type="text/javascript" src="js/materialize.min.js"></script> 
         <script src = "./start.js"></script>
         <script src = "./complete.js"></script>
     </body>
